@@ -6,7 +6,7 @@
 
 ## Problem Overview
 
-This application solves the **“Natatie”** problem from the National Informatics Olympiad (Romania).
+This application solves the **“Duck race”** problem from the National Informatics Olympiad (Romania).
 
 A prince organizes a swimming race using a selection of ducks, each characterized by:
 
@@ -55,7 +55,7 @@ This transforms the problem into:
 
 ### 2. Optimization Approach
 
-* Use **binary search on time** ⏱️:
+* Use **binary search on time**:
 
   * Guess a maximum allowed time `T`
   * Check if it's possible to assign ducks under this constraint
@@ -154,20 +154,20 @@ The project follows a **Layered OOP Architecture**, ensuring separation of conce
 ## 📈 Complexity
 
 * **Time Complexity:**
-  [
+  $$
   O(N \log N + N \log precision)
-  ]
+  $$
 
 * **Space Complexity:**
-  [
+  $$
   O(N)
-  ]
+  $$
 
 Efficient enough for constraints up to **3000 ducks**
 
 ---
 
-## 🧪 Example
+## Example
 
 **Input:**
 
@@ -203,7 +203,7 @@ Efficient enough for constraints up to **3000 ducks**
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
 This project demonstrates how a **complex combinatorial optimization problem** can be elegantly solved using:
 
