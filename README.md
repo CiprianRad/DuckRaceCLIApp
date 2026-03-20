@@ -29,7 +29,7 @@ The objective is to **minimize the total race duration**.
 
 ---
 
-## 💡 Key Insight
+##  Key Insight
 
 The total race time is determined by the **maximum individual completion time**:
 
