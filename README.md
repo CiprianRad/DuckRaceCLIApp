@@ -1,4 +1,4 @@
-# National Informatics olympiad problem OOP solution (Duck race)
+# National Informatics Olympiad Problem OOP Solution (Duck Race)
 
 ### Layered Architecture Solution for an Algorithmic Optimization Problem
 
@@ -34,8 +34,10 @@ The objective is to **minimize the total race duration**.
 The total race time is determined by the **maximum individual completion time**:
 
 $$
-T = \max \left(\frac{2 \cdot distance_i}{speed_{duck_i}}\right)
+T = \max\left(\frac{2 \cdot d_i}{v_i}\right)
 $$
+
+*(where (d_i) = distance and (v_i) = speed of duck (i))*
 
 This transforms the problem into:
 
@@ -57,19 +59,19 @@ This transforms the problem into:
 
 * Use **binary search on time**:
 
-  * Guess a maximum allowed time `T`
+  * Guess a maximum allowed time (T)
   * Check if it's possible to assign ducks under this constraint
 
 ### 3. Feasibility Check
 
-* For a fixed `T`, verify:
+For a fixed (T), verify:
 
-  * If there exist enough ducks such that
+$$
+\frac{2 \cdot d}{v} \le T
+$$
 
-  $$
-    \frac{2 \cdot distance}{speed} \le T
-  $$
-* Ensure selected ducks respect **monotonic resistance ordering**
+* Ensure there are enough valid ducks
+* Maintain **monotonic resistance ordering**
 
 ### 4. Greedy Assignment
 
@@ -102,6 +104,7 @@ The project follows a **Layered OOP Architecture**, ensuring separation of conce
   * Duck entity
   * Lane constraints
   * Time calculation
+
 * Implements:
 
   * Feasibility checking
@@ -154,14 +157,10 @@ The project follows a **Layered OOP Architecture**, ensuring separation of conce
 ## 📈 Complexity
 
 * **Time Complexity:**
-  $$
-  O(N \log N + N \log precision)
-  $$
+  $$O(N \log N + N \log precision)$$
 
 * **Space Complexity:**
-  $$
-  O(N)
-  $$
+  $$O(N)$$
 
 Efficient enough for constraints up to **3000 ducks**
 
@@ -215,3 +214,4 @@ It balances **performance, clarity, and extensibility** — making it both compe
 ---
 
 💬 *“Fast ducks win races, but smart architecture wins projects.”*
+
