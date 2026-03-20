@@ -15,7 +15,7 @@ A prince organizes a swimming race using a selection of ducks, each characterize
 
 There are multiple swimming lanes, each with a **beacon placed at increasing distances** from the start.
 
-### 🎯 Goal
+### Goal
 
 Select and assign ducks to lanes such that:
 
