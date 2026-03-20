@@ -33,9 +33,9 @@ The objective is to **minimize the total race duration**.
 
 The total race time is determined by the **maximum individual completion time**:
 
-[
-T = \max \left( \frac{2 \cdot distance_i}{speed_{duck_i}} \right)
-]
+$$
+T = \max \left(\frac{2 \cdot distance_i}{speed_{duck_i}}\right)
+$$
 
 This transforms the problem into:
 
@@ -65,9 +65,10 @@ This transforms the problem into:
 * For a fixed `T`, verify:
 
   * If there exist enough ducks such that
-    [
+
+  $$
     \frac{2 \cdot distance}{speed} \le T
-    ]
+  $$
 * Ensure selected ducks respect **monotonic resistance ordering**
 
 ### 4. Greedy Assignment
