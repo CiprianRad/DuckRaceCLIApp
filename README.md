@@ -1,4 +1,4 @@
-# 🦆 Natatie OOP Application
+# National Informatics olympiad problem OOP solution (Duck race)
 
 ### Layered Architecture Solution for an Algorithmic Optimization Problem
 
