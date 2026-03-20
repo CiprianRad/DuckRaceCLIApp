@@ -4,14 +4,14 @@
 
 ---
 
-## 📌 Problem Overview
+## Problem Overview
 
 This application solves the **“Natatie”** problem from the National Informatics Olympiad (Romania).
 
 A prince organizes a swimming race using a selection of ducks, each characterized by:
 
-* **Speed** 🏎️ (meters/second)
-* **Resistance** 💪
+* **Speed** (meters/second)
+* **Resistance**
 
 There are multiple swimming lanes, each with a **beacon placed at increasing distances** from the start.
 
@@ -25,7 +25,7 @@ Select and assign ducks to lanes such that:
    * A duck on a farther lane must have **equal or higher resistance** than the previous.
 3. The race finishes when the **slowest duck returns**.
 
-👉 The objective is to **minimize the total race duration**.
+The objective is to **minimize the total race duration**.
 
 ---
 
@@ -46,7 +46,7 @@ This transforms the problem into:
 
 ---
 
-## 🧠 Solution Strategy
+## Solution Strategy
 
 ### 1. Sorting & Preprocessing
 
@@ -77,7 +77,7 @@ This transforms the problem into:
 
 ---
 
-## 🏗️ Application Architecture
+## Application Architecture
 
 The project follows a **Layered OOP Architecture**, ensuring separation of concerns and maintainability.
 
